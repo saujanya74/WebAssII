@@ -1,0 +1,359 @@
+/*
+
+	CSS RESET
+
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix {
+	clear: both;
+}
+/*
+
+	CSS RESET END
+
+*/
+
+
+body {
+	background: #0b0c10;
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	width: 85%;
+	margin: 0px auto;
+	background: #fff;
+}
+header {
+	background:#9638E0;
+	padding: 15px;
+}
+header h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	padding: 20px;
+	font-size: 50px;
+	color: white;
+}
+nav {
+	width: 100%;
+	background: #82E038;
+	text-align: center;
+	padding: 5px 0;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 20px;
+	background: #1f2833;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+nav ul li a:hover {
+	background: #38D6E0
+}
+.page-wrapper {
+	background: white;
+	/*padding: 15px;*/
+}
+.main-content {
+	display: flex;
+}
+.main-content .newrelease {
+	flex:1;
+}
+.main-content .sidemenu {
+	flex:0.5;
+}
+.main-content .content {
+	flex:2;
+}
+.main-content .newrelease, .main-content .sidemenu {
+	background: #E04238;
+	padding: 15px;
+}
+.main-content .newrelease .item {
+	border:2px solid black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.main-content .newrelease .item:nth-child(2) {
+	margin-bottom:0;
+}
+.main-content .newrelease .item h2 {
+	text-transform: uppercase;;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.main-content .newrelease .item .item-left {
+	float: left;
+	width: 70%;
+}
+.main-content .newrelease .item .item-left p, .main-content .newrelease .item .item-other-detail p {
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+.main-content .newrelease .item .item-left p b {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+.main-content .newrelease .item .item-right {
+	float: right;
+	width: 30%;
+}
+.main-content .newrelease .item .item-right img{
+	text-align: right;
+	width: 100%;
+}
+.main-content .newrelease .item .item-other-detail {
+	width: 100%
+}
+.main-content .content {
+	background: #f3564b;
+	padding: 15px;
+}
+.main-content .content .page-info {
+	border:2px solid black;
+	padding: 15px;
+}
+.main-content .content .page-info h1 {
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 15px;
+	/*padding:10px;*/
+}
+.main-content .content .page-info p {
+	line-height: 22px;
+	margin-bottom: 15px;
+}
+.main-content .content .page-info p b {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.main-content .content .page-info p a {
+	color: #fff !important;
+    background: #820f0f;
+    padding: 4px;
+    text-transform: uppercase;
+}
+.main-content .content .page-info .contact-image {
+	width: 100%
+}
+.main-content .content .page-info #contactBlock p {
+	margin-bottom: 0;
+}
+.main-content .content .page-info #contactBlock label {
+	display: inline-block;
+	width: 150px !important;
+	text-align: right;
+	font-weight: bold;
+	padding: 5px;
+}
+.main-content .content .page-info #map-canvas {
+	border:2px dashed white;
+	width: 100%;
+	height: 200px;
+}.main-content .content .page-info #map-canvas::after {
+	content:'Map goes here';
+	padding: 25px;
+	display: block;
+}
+.main-content .sidemenu h3 {
+	padding: 15px 0;
+}
+.main-content .sidemenu .navigation {
+	width: 100%
+}
+.main-content .sidemenu .navigation ul li {
+	margin-bottom: 5px;
+}
+
+.main-content .sidemenu .navigation ul li a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	background: #82E038;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.main-content .sidemenu .navigation ul li a:hover {
+	background: #0b0c10;
+	color: white;
+}
+footer {
+	display: flex;
+	background:#9638E0;
+	padding:15px;
+}
+footer div {
+	flex: 1;
+}
+footer .footer-right {
+	text-align: right;
+}
+footer p {
+	color:white;
+}
+
+.content h1 {
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.page-info-movie {
+	display: flex;
+	flex-wrap: wrap;
+}
+.movie-list {
+	display: inline-block;
+	width: 45%;
+	border: 2px dashed white;
+	padding: 15px;
+	margin-right: 1%;
+	margin-bottom: 10px;
+}
+.movie-list:nth-child(2n) {
+	margin-right: 0%;
+}
+
+.movie-list .inner {
+	float: left;
+	width: 70%;
+}
+.movie-list .inner-right {
+	float: right;
+	width: 30%;
+}
+.movie-list .inner-right img {
+	width: 100%
+}
+.movie-title h3 {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.searchbox {
+	background:#461463;
+	padding: 15px;
+	margin-bottom: 10px;
+	color: white;
+}
+.searchbox label {
+	display: inline-block;
+	width: auto;
+	margin-right: 15px;
+}
+.searchbox select, .searchbox button {
+	padding: 10px;
+}
+.searchbox select {
+	width: 70%;
+}
+.searchbox button {
+	cursor: pointer;
+}
+.h3-people {
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 24px;
+}
+.form1 {
+	margin-bottom: 15px;
+}
+.form1 fieldset {
+	border:2px solid black;
+	padding: 10px;
+}
+.form1 fieldset legend {
+	font-style: italic;
+	font-weight: bolder;
+}
+.form1 fieldset label {
+	display: inline-block;
+	width: 150px;
+}
+.form1 fieldset input[type="text"], .form1 fieldset select {
+	padding: 5px;
+	width: 55%
+}
+.form1 fieldset .form-group {
+	margin-bottom: 10px;
+}
+.form1 fieldset .form-group:nth-last-child() {
+	margin-bottom: 0;
+}
+.form1 fieldset button {
+	text-align: center
+}
+.full-width {
+	width: 100% !important;
+	margin-bottom: 15px;
+}
+
+.btn {
+	border:0;
+	background: none;
+	padding: 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.btn-submit {
+	background: #82E038;
+	color: white
+}
+.btn-submit:hover {
+	background: #559422;
+}
+.btn-reset {
+	background: #0b0c10;
+	color: white
+}
